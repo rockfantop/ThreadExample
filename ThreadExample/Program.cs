@@ -14,7 +14,11 @@ namespace ThreadExample
 
             var min = threadTasks.FindMin(Environment.ProcessorCount, 1000);
 
+            Console.WriteLine($"Мінімальне значення: {min}");
+
             var average = threadTasks.FindAverage(Environment.ProcessorCount, 1000);
+
+            Console.WriteLine($"Середнє арифметичне: {average}");
 
             Console.Read();
         }
