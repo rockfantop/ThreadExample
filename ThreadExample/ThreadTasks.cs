@@ -113,6 +113,11 @@ namespace ThreadExample
         {
             var array = GenerateArray(proccesorCount, elements);
 
+            foreach (var item in array)
+            {
+                Console.Write(item + " ");
+            }
+
             int[] results = new int[proccesorCount];
 
             List<Thread> threads = new List<Thread>();
@@ -156,6 +161,11 @@ namespace ThreadExample
             int[] array = GenerateArray(proccesorCount, elements);
 
             int[] results = new int[proccesorCount];
+
+            foreach (var item in array)
+            {
+                Console.Write(item + " ");
+            }
 
             List<Thread> threads = new List<Thread>();
 
